@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,16 +21,16 @@
             <h2 class="section-title">Enter your friends' names</h2>
             <div class="input-wrapper">
                 <input type="text" id="friend" class="input-name" placeholder="Write a name">
-                <button class="button-add" onclick="addFriend()">Añadir</button>
+                <button class="button-add" onclick="addFriend()">Add</button>
             </div>
            
-            <ul id="friendsList" class="name-list" aria-labelledby="friendsList" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+            <ul id="friendsList" class="name-list" aria-labelledby="friendsList"></ul>
+            <ul id="result" class="result-list" aria-live="polite"></ul>
 
             <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                <button class="button-draw" onclick="drawName()" aria-label="Draw a secreat santa">
                     <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
-                    Sortear amigo
+                    Draw a name
                 </button>
             </div>
         </section>

@@ -1,19 +1,20 @@
 let friends = [];
 
 function addFriend() {
-    let name = document.getElementById("friend").value.trim();
+    let input = document.getElementById("friend");
+    let name = input.value.toLowerCase().trim();
 
-    if(name === " "){
+    if(name === ""){
         alert("Please enter a valid name.");
-        return
+        return;
     }
 
     if(friends.includes(name)){
         alert("This name has already been added.");
-        return
+        return;
     }
 
-    amigos.push(name);
+    friends.push(name);
     document.getElementById("friend").value = "";
     showFriends();
 }
@@ -28,4 +29,14 @@ function showFriends() {
     }
 }
 
+function drawName() {
+    if (friends.length === 0) {
+    alert("Add at least one name before drawing.");
+    return;
+  }
 
+  const random = Math.floor(Math.random() * friends.length);
+  const chosen = friends[random];
+  document.getElementById("result").innerHTML = `<li>🎁 You drew: ${chosen}</li>`;
+
+}
