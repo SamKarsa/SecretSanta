@@ -56,6 +56,8 @@ _A simple and fun web app to organize **Secret Santa** gift exchanges with your 
 ---
 
 ## 🧱 Project Structure
+
+```bash
 secret-santa/
 │
 ├── index.html         
@@ -65,5 +67,6 @@ secret-santa/
 └── assets/
     ├── amigo-secreto.png
     └── play_circle_outline.png
+```
 
 Enjoy organizing your Secret Santa! 🎅🎄
