@@ -3,7 +3,7 @@ let friends = [];
 function addFriend() {
     let name = document.getElementById("friend").value.trim();
 
-    if(name === ""){
+    if(name === " "){
         alert("Please enter a valid name.");
         return
     }
@@ -13,9 +13,19 @@ function addFriend() {
         return
     }
 
-    amigos.push(nombre);
-    document.getElementById("amigo").value = "";
+    amigos.push(name);
+    document.getElementById("friend").value = "";
+    showFriends();
 }
 
+function showFriends() {
+    let list = document.getElementById("friendsList");
+    list.innerHTML = "";
+    for(let friend of friends){
+        let li= document.createElement("li");
+        li.textContent = friend;
+        list.appendChild(li);
+    }
+}
 
 
