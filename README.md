@@ -1,57 +1,65 @@
-🎁 Secret Santa
-A simple and fun web application to organize Secret Santa gift exchanges with your friends and family.
+# 🎁 Secret Santa
 
-📸 Preview
-The application features a modern and festive interface that allows you to add participant names and conduct random drawings.
-✨ Features
+_A simple and fun web app to organize **Secret Santa** gift exchanges with your friends and family._
 
-Intuitive interface: Clean and easy-to-use design
-Add participants: Add names of all participants
-Data validation: Prevents duplicate names and empty entries
-Random drawing: Randomly selects a participant
-No database required: Works completely in the browser
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?logo=javascript&logoColor=000)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#-license)
 
-🚀 How to Use
+---
 
-Add participants:
+## 📸 Preview
 
-Type a participant's name in the text field
-Click "Add" to add it to the list
-Repeat the process for all participants
+<img width="1919" height="894" alt="image" src="https://github.com/user-attachments/assets/afa2714c-a49e-4f4a-a4de-3d6ef39bc418" />
 
-Conduct the drawing:
 
-Once you've added at least one name
-Click "Draw a name" to conduct the drawing
-The result will be displayed below the button
+---
 
-🛠️ Installation and Usage
-Option 1: Use directly
+## ✨ Features
 
-Download or clone this repository
-Open the index.html file in your web browser
-Ready to use!
+- **Intuitive interface:** clean and easy to use  
+- **Add participants:** gather all names quickly  
+- **Data validation:** prevents empty inputs and duplicates  
+- **Random drawing:** fair name selection with `Math.random()`  
+- **No backend:** 100% client-side, works in the browser  
+- **Accessibility:** ARIA attributes and live regions
 
-🎨 Technologies Used
+---
 
-HTML5: Application structure
-CSS3: Styles and responsive design
-JavaScript (ES6+): Functionality and interactivity
-Google Fonts: Inter and Merriweather typefaces
+## 🚀 How to Use
 
-🔧 Technical Features
+1. **Add participants**
+   - Type a participant’s name in the input
+   - Click **Add** (or press **Enter**)
+   - Names are normalized to **lowercase** to avoid duplicates
 
-Input validation: Prevents empty and duplicate names
-Lowercase conversion: Normalizes names to avoid duplicates
-Random generation: Uses Math.random() for fair drawing
-DOM manipulation: Dynamic interface updates
-Accessibility: Includes ARIA attributes for better accessibility
+2. **Draw**
+   - Once there is at least one name
+   - Click **Draw a name**
+   - The result appears under the button: `🎁 You drew: <name>`
 
-🎯 Code Characteristics
+---
 
-Clean and well-structured code
-Modular and reusable functions
-Error handling with informative alerts
-No external dependencies
+## 🛠️ Installation
 
-Enjoy organizing your Secret Santa! 🎅🎄
+### Option 1 — Open directly
+- Download or clone the repository  
+- Open `index.html` in your browser  
+- Done ✅
+
+### Option 2 — Live Server (recommended for development)
+- Open the folder in **VS Code**
+- Install the **Live Server** extension
+- Right-click `index.html` → **Open with Live Server**
+
+---
+
+## 🧱 Project Structure
+├── index.html
+├── app.js
+├── style/
+│ └── style.css
+└── assets/
+├── amigo-secreto.png
+└── preview.png
